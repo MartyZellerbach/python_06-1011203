@@ -39,4 +39,3 @@ elif zarobki < 100000:
 else:
     podatek = 0.9
 print(f"Płacisz {zarobki * podatek} podatku")
-

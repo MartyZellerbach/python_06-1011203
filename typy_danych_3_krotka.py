@@ -38,6 +38,3 @@ print(imie3)
 lista = list(tupla2)
 print(lista)  # ['Tomek', 'Asia', 'Zbyszek', 'Marek']
 print(type(lista))  # <class 'list'>
-
-
-

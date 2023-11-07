@@ -10,7 +10,7 @@ lista.append("Nuda2")
 lista.append("Nuda3")
 print(lista)  # ['Nuda', 'Nuda1', 'Nuda2', 'Nuda3']   lista w kwadratowych nawiasach
 #                 0(-4)    1(-3)     2(-2)   3(-1)
-#indeksowania od 0
+# indeksowania od 0
 print(lista[0])
 print(lista[2])
 # wypisać dwa dowolne
@@ -18,8 +18,8 @@ print(lista[2], lista[3])
 print(lista[3])
 print(len(lista))  # 4 czyli trzeba odjąć 1
 print(lista[-1])  # wyświetli ostatni element z listy
-print(lista[-3])  #  Nuda_1
-print(lista[0:3])  #  wyświetli od 0 do 2 - ['Nuda', 'Nuda1', 'Nuda2']
+print(lista[-3])  # Nuda_1
+print(lista[0:3])  # wyświetli od 0 do 2 - ['Nuda', 'Nuda1', 'Nuda2']
 print(lista[0:-2])  # ['Nuda', 'Nuda1']
 print(lista[-2:0])  # [] nic nie jest w stanie wyświetlić - idzie zawsze w praw a zero po lewej
 
@@ -39,7 +39,7 @@ print(lista)
 indeks = lista.index("Nuda3")
 print(indeks)
 
-#usuniecie elementu po indeksie  czyl;i powyżej zmienna indeks = Nuda3 czyli usuwa Nuda3
+# usuniecie elementu po indeksie  czyl;i powyżej zmienna indeks = Nuda3 czyli usuwa Nuda3
 print(lista.pop(indeks))  # zwraca element który usunelismy
 print(lista)
 print(lista.pop())
@@ -53,7 +53,7 @@ print(a)
 
 lista2 = lista
 lista3 = lista.copy()  # kopiowanie listy z jednej do drugiej
-print(lista)  #  kopiowanie refenecje - oznacza adres w pamięci
+print(lista)  # kopiowanie refenecje - oznacza adres w pamięci
 print(lista2)
 lista.clear()  # wyczyssc liste
 print(lista2)  # []
@@ -66,7 +66,7 @@ print(id(lista3))  # 2116619237440
 # deklaracja listy z elementami
 
 liczby = [54, 999, 34, 22, 12.34, 687]
-#liczby = [54, 999, 34, 22, 12.34, 687, "A"]   # nie umie sortować str
+# liczby = [54, 999, 34, 22, 12.34, 687, "A"]   # nie umie sortować str
 print(liczby)
 liczby.sort()
 print(liczby)
@@ -99,8 +99,3 @@ print(lista_2)  # ['Python']
 krotka = tuple(liczby)  # zmiana listy na krotka (tuple)
 print(type(krotka))  # <class 'tuple'>
 print(krotka)  # (12.34, 22, 687, 999)
-
-
-
-
-

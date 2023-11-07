@@ -21,7 +21,7 @@ print(wiek / rok)  # wynik dzielenia zawsze będzie typem danych float
 print(wiek // rok)  # część całkowieta z dzielenia
 print(wiek % rok)  # reszta z dzielenia czyli modulo 47
 
-print(5 % 2 )  # 1 bo 2 * 2 = 4 + 1 = 5   dzielenie 5/2 daje wynik 1
+print(5 % 2)  # 1 bo 2 * 2 = 4 + 1 = 5   dzielenie 5/2 daje wynik 1
 print(wiek ** rok)
 print(54 - 5 * 43 + 4 / 2 + 4 / 2)  # -157.0
 print(54 - 5 * 43 + (4 / 2 + 4) / 2)  # -158.0
@@ -30,7 +30,7 @@ print(0.2 + 0.8)  # 1.0
 print(0.2 + 0.7)  # 0.8999...
 # flouty i obliczenia wystepuje bład zaaokrąglenia - wynika to z pamęci przehcowywaia w pamięci komputera
 # flouty mają błąd zaokrąglenia
-print(f"{0.2 + 0.7:.1f}") # 0.9
+print(f"{0.2 + 0.7:.1f}")  # 0.9
 #  w jakich typach danych przechowywać pieniadze w javie ?  bigdecimal lub decimal
 print(f"Sprawdzenie zmiennej {temp} {wiek}")
 print(f"""
@@ -44,7 +44,7 @@ print(f"""
 czy_znasz_python = False
 print(czy_znasz_python)
 print(type(czy_znasz_python))  # <class 'bool'> czyli typ logiczny
-print(int(czy_znasz_python)) # 1
+print(int(czy_znasz_python))  # 1
 # zamiana w drugą strone czyli 1 na True, 0 - True
 x = 1
 print(bool(x))  # True
@@ -89,8 +89,3 @@ print(f"Porównanie {a} >= {b}", a >= b)
 print(f"Porównanie {a} <= {b}", a <= b)
 # stackoverflow
 # chatgpt
-
-
-
-
-
