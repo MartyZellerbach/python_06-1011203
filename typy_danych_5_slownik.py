@@ -56,3 +56,4 @@ a = "6"
 b = "6"
 wyr = a + "+" + b
 print(eval(wyr))  # wynik 13
+
