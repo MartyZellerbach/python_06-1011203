@@ -14,4 +14,4 @@ match lang:
         print("Nie znam takiego języka")
 print(lista)
 print("Super! Znam ten język programowania który podałeś.")
-
+print(f"Super! Znam ten język programowania który podałeś. {lista}")  # dodajemy "f"
