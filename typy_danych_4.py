@@ -42,8 +42,13 @@ zbior3 = {1, 2, 3, 4, 5, 5}
 print(zbior3)
 zbior3.add(15)
 zbior3.add(0)
+zbior3.add(0)
 zbior3.add(115)
 print(zbior3)  # {0, 1, 2, 3, 4, 5, 115, 15}
+zbior3.clear()
+print(zbior3)  # set() - oznacza pusty zbiór
+
+
 
 
 
