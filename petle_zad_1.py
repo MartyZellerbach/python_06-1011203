@@ -3,6 +3,7 @@
 # bierze dane i pokolei po nich się pzemieszcza
 
 import random
+from itertools import zip_longest  # ładowanie biblioteki
 
 for i in range(10):  # 0..9
     print(i, end=' ')
@@ -82,8 +83,6 @@ for i in range(len(imiona)):  # range(3)
     print(i, imiona[i])
 
 # enumerate() - numeruje kolekcje, zwraca nadany indeks i elemnt
-
-
 for p in enumerate(imiona):
     print(p)
 # wynik pojawia się w KROTKA:
@@ -92,10 +91,92 @@ for p in enumerate(imiona):
 # (2, 'Tomek')
 a, b = (0, 'Radek')
 print(a, b)
-# for p, o in enumerate(imiona):  # rozpakowanie krotki podczas pobierania danych w petli
+# for p, o in enumerate(imiona):  # enumerate ponurowanie kolekcji, a rozpakowanie krotki podczas pobierania danych w petli
 #     print(p, o)
 for p, o in enumerate(imiona, start=1):  # startuje od 1 dla Radka
     print(p, o)
+# lub
+for p, o in enumerate(imiona, start=1):  # startuje od 2 czyli od Zenka
+    if p >= 1:
+        print(p, o)
+# lub
+for i in range(1, len(imiona)):  # range(3)
+    print(i, imiona[i])
+
+ludzie = ['Radek', 'Janek', 'Asia', 'Romek', 'Artur']
+wiek = [47, 57, 32 ,34]
+# wypisaniu imienia i opodiwajacego mu wieku
+# # gdy długość list różne:
+# for x in range(len(ludzie)):
+#     print(ludzie[x], wiek[x])
+#
+# for i in ludzie:
+#     print(i, wiek[ludzie.index(i)])
+#
+for i in zip(ludzie, wiek):
+    print(i)
+# dostajemy krotke
+# rozpakujemy ta krotke
+# for o, w in zip(ludzie, wiek):
+#     print(o, w)  # domyślnie daje spacje pomiedzy np. radek 47
+
+for o, w in zip(ludzie, wiek):
+    print(o, w, sep=";")
+# Radek;47
+# Janek;57
+# Asia;32
+# Romek;34
+# sep - znak separacji pmizy przecinkami(domy slnie spacja)
+
+# 0 Radek 47
+for i in enumerate(zip(ludzie, wiek)):
+    print(i)  # (3, ('Romek', 34))
+#
+# a, b = (3, ('Romek', 34))
+# print(a)
+# print(b)  # ('Romek', 34)
+# imie, wiek = ('Romek', 34)
+# indeks, (imie, wiek) = (3, ('Romek', 34))
+# print(indeks, imie, wiek)  # 3 Romek 34
+
+a, b = (3, ('Romek', 34))
+print(a)
+print(b)  # ('Romek', 34)
+imie, wiek2 = ('Romek', 34)
+indeks, (imie, wiek2) = (3, ('Romek', 34))
+for indeks, (imie, wiek2) in enumerate(zip(ludzie, wiek)):
+    print(indeks, imie, wiek2)  # 3 Romek 34
+# 0 Radek 47
+# 1 Janek 57
+# 2 Asia 32
+# 3 Romek 34
+# teraz mamy 5 imion ale tylko dla czterech osób wiek
+# łądujemy biblioteki longest
+
+zipped = zip_longest(ludzie, wiek, fillvalue='Nan')
+print(type(zipped))  # <class 'itertools.zip_longest'>
+zipped_list = list(zipped)
+for name, age in zipped_list:
+    print(name, age)
+# Radek 47
+# Janek 57
+# Asia 32
+# Romek 34
+# Artur Nan
+# dodać indeksy
+for p in enumerate(zipped_list):
+    print(p)
+for i,(o,w) in enumerate(zipped_list):
+    print(i,o,w)
+# 0 Radek 47
+# 1 Janek 57
+# 2 Asia 32
+# 3 Romek 34
+# 4 Artur Nan
+
+c = {'name': 'Radek', 'age': '5'}  # słownik
+print({v: k for k, v in c.items()})  # {'Radek': 'name', '5': 'age'}
+
 
 
 
