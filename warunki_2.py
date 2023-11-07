@@ -35,6 +35,28 @@ elif alert_system == 'console':
         list_bledow.append("inny")
 print(list_bledow)
 
+# ćwieczenie na if
+# zrobić test z historii czegokolwiek
+# zadać pytanie
+# pobrać odpowiedz
+# sprawdzić
+# wypisać ocene
+
+odp = input("Podaj stolicę Polski?")
+if odp.capitalize() == 'Warszawa':
+    print("Prawda")
+elif odp.capitalize() == 'Kraków':
+    print("To chyba nie to miasto, wygoogluj proszę.")
+else:
+    print("Pomyliłeś się, musisz się douczyć..")
+
+odp2 = input("W którym roku był chrzest Polski")
+if odp2.capitalize() == '966':
+    print("Prawda")
+else:
+    print("Pomyliłeś się, musisz się douczyć..")
+
+
 
 
 
