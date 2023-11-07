@@ -50,15 +50,3 @@ print(zbior3)  # set() - oznacza pusty zbiór
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
