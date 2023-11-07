@@ -1,1 +1,2 @@
-#  set (zbiór) -
+#  set (zbiór) - przechowuje niezduplikowane elementy
+
