@@ -16,4 +16,27 @@ if odp:
 else:
     print("Ucz się dalej")  # w przeciwnym przypadku
 
+podatek = 0.9
+zarobki = int(input("Podaj dochów"))  # podaj dochów zamieniamy na liczbę całkowitą int
+if zarobki < 10000:
+    podatek = 0.0
+elif zarobki < 100000:
+    podatek = 0.4
+else:
+    podatek = 0.9
+print(f"Płacisz {zarobki * podatek}")
+
+# dla 10.000 do 29.999 podatek 0.2
+# kolejność warunków ma znaczenie
+podatek = 0.9
+zarobki = int(input("Podaj dochów"))  # podaj dochów zamieniamy na liczbę całkowitą int
+if zarobki < 10000:
+    podatek = 0.0
+elif zarobki < 30000:  # dla 10.000 do 29.999 podatek 0.2 <- dodajemy tutaj
+    podatek = 0.2
+elif zarobki < 100000:
+    podatek = 0.4
+else:
+    podatek = 0.9
+print(f"Płacisz {zarobki * podatek} podatku")
 
