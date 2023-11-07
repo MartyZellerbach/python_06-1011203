@@ -24,7 +24,7 @@ print()
 # wygenerować liczby od 1 .. 49
 # w pętli pibierać(losować0 z listy, wyświetlić i usuwać
 
-lista = list(range(1,50))
+lista = list(range(1, 50))
 lista_wynik = []
 for i in range(6):
     wyn = random.choice(lista)
@@ -104,7 +104,7 @@ for i in range(1, len(imiona)):  # range(3)
     print(i, imiona[i])
 
 ludzie = ['Radek', 'Janek', 'Asia', 'Romek', 'Artur']
-wiek = [47, 57, 32 ,34]
+wiek = [47, 57, 32, 34]
 # wypisaniu imienia i opodiwajacego mu wieku
 # # gdy długość list różne:
 # for x in range(len(ludzie)):
@@ -166,8 +166,8 @@ for name, age in zipped_list:
 # dodać indeksy
 for p in enumerate(zipped_list):
     print(p)
-for i,(o,w) in enumerate(zipped_list):
-    print(i,o,w)
+for i, (o, w) in enumerate(zipped_list):
+    print(i, o, w)
 # 0 Radek 47
 # 1 Janek 57
 # 2 Asia 32
@@ -176,8 +176,3 @@ for i,(o,w) in enumerate(zipped_list):
 
 c = {'name': 'Radek', 'age': '5'}  # słownik
 print({v: k for k, v in c.items()})  # {'Radek': 'name', '5': 'age'}
-
-
-
-
-
