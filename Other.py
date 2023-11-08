@@ -8,3 +8,4 @@ print(int("0b11111111", 2))  # 255
 # update - slownik
 
 
+# Python powstał w latach 90'
