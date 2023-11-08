@@ -27,4 +27,4 @@ allparams3(1, 2, 67, 7, 8, 9)  # args, kwargs (7, 8, 9) {}
 allparams3(1, 2, 67, 7, 8, 9, 11, 12, d=89)
 allparams3(1, 2, 67, 7, 8, 9, 11, 12, args=89, kwargs=9, kwargs2=9)
 allparams3(1, 2, 67, 7, 8, 9, 11, 12, args=89, kwargs=9, kwargs2=9)
-allparams3(1, 2, a=0)  # trafi do kwargs
+allparams3(1, 2, a=0)  # trafi do kwargs, gdyby była warotśc podać a to trafi właśnie do kwargs a nie do a.
