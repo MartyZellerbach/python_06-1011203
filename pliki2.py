@@ -1,10 +1,11 @@
 import chardet
+
 # pip install chardet
 # oraz po prawej na dole rogu Interpreter settings..
 
 file_path = 'test.log'
 
-with open(file_path, 'rb') as file: # nie jako tekst ale binarnie otwarcie czyrtanie
+with open(file_path, 'rb') as file:  # nie jako tekst ale binarnie otwarcie czyrtanie
     raw_data = file.read()
 
 # dla małej próbki czyli np wystąpienie jednego polskiego znaku ś może mieć błędny odczyt tak jak poniżej Turkish
@@ -20,7 +21,3 @@ print(raw_data.decode(encoding=encoding))
 # Dodane
 # DośdaneŹ
 # łóęć
-
-
-
-
