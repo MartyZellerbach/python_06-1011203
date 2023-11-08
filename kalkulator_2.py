@@ -48,4 +48,3 @@ while True:
 # jaki sposób przechwytujemy wyjątki w pythoni ? try - except, ewentualnie finally
 # praca domowa - za pomocą case
 # shift + tab - zaznaczone linie cofa, do lewej..
-
