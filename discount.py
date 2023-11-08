@@ -53,7 +53,7 @@ for product in products:
     #     print(f"""
     #     Price for {product['sku']}
     #     is now {product['price']}""")
-# ctrl + / - komentarz zaznaczonych linii
+    # ctrl + / - komentarz zaznaczonych linii
     if product['exp_date'] != today:
         continue  # kończy bieżącą iteracje pętli, wraca na początek pętli, pobiera koljny element
     product['price'] *= 0.8
@@ -68,7 +68,3 @@ for product in products:
     #
     # Price for 4
     # is now 120.0
-
-
-
-
