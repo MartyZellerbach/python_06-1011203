@@ -38,7 +38,7 @@ while True:
         print("Błąd wartości, wpisz liczbę w działaniu!")
     except TypeError:
         print("Błąd typu")
-    except Exception as e:
+    except Exception as e:  # pozostałe wyjątki
         print("Wsytapił błąd", e)
     else:  # wykona się tylko, gdy nie wystąpi błąd
         print("Operacja zakończyła się pomyślnie")
@@ -47,3 +47,5 @@ while True:
         print("Zakończyłem obliczenia..")
 # jaki sposób przechwytujemy wyjątki w pythoni ? try - except, ewentualnie finally
 # praca domowa - za pomocą case
+# shift + tab - zaznaczone linie cofa, do lewej..
+
