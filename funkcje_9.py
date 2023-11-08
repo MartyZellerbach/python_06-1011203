@@ -37,6 +37,7 @@ print(f"Zastosowanie map(): {list(map(lambda x: x * 2, lista))}")
 
 print(f"Zastosowanie filter(): {list(filter(lambda x: x < 3, lista))}")
 print(f"Zastosowanie filter(): {list(filter(lambda x: x > 8, lista))}")
+# x > 3 i x < 20
 print(f"Zastosowanie filter(): {list(filter(lambda x: 3 < x < 20, lista))}")
 
 
