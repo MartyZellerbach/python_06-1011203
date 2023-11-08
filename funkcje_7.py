@@ -23,3 +23,4 @@ def connect_all(*args, **kwargs):
 connect()  # {} słownik, a słownik to klucz i wartość
 connect(a=7)  # argument nazwy
 connect_all(1, 2, 3, 4, "Radek", "Zenek", a=8, b=9, c=9, name="radek")
+
