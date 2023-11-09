@@ -22,7 +22,7 @@ with open(filename, 'w', newline='', encoding='utf-8') as csv_f:
     # csvwriter = csv.writer(csv_f)
     # csvwriter.writerow(fields)
     # csvwriter.writerow(row)
-    csvwriter = csv.DictWriter(csv_f, fieldnames=fields)
+    csvwriter = csv.DictWriter(csv_f, fieldnames=fields, delimiter=";")
     csvwriter.writeheader()
     # csvwriter.writerow(zipped_dict)
     csvwriter.writerows(dict_list)
