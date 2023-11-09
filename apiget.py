@@ -19,6 +19,18 @@ for k, v in table['rates'][0].items():
 rates = table['rates'][0]
 print(table['rates'][0]['no'])
 print(table['rates'][0]['effectiveDate'])
-print(table['rates'][0]['mid'])
-print(rates['no'],rates['effectiveDate'],rates['mid'])
+print(table['rates'][0]['mid'])  # 4.6343
+print(rates['no'], rates['effectiveDate'], rates['mid'])  # 216/A/NBP/2023 2023-11-08 4.6343
+# pobrać ceny złota
+# pydantic
+
+url = 'http://api.nbp.pl/api/cenyzlota/today'
+response_gold = re.get(url)
+
+table_gold = response_gold.json()
+print(table_gold)
+print(type(table_gold))
+print(table_gold[0]['data'])
+print(table_gold[0]['cena'])
+
 
