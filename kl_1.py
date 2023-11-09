@@ -54,3 +54,4 @@ cz1.powitanie()
 cz1.wypisz_wiek()
 cz2.powitanie()
 cz2.wypisz_wiek()
+
