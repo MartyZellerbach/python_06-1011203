@@ -16,11 +16,11 @@ try:
     salary REAL NOT NULL);
     '''
     insert = '''
-    INSERT INTO developers (id, name, email, salary) VALUES (1, 'Radek', 'raj@wp.pl', 5000);
+    INSERT INTO developers (id, name, email, salary) VALUES (4, 'Ania', 'a@o2.pl', 7000);
     '''
     cursor = sql_connection.cursor()  # obiekt który komunik się z nami a baza musi być
     print("Baza została podłączona")
-#    sql_connection.execute(query)
+    #    sql_connection.execute(query)
     sql_connection.execute(insert)
     sql_connection.commit()
 
@@ -31,5 +31,3 @@ finally:  # wykonuje się zawsze
     if sql_connection:
         sql_connection.close()
         print("Baza została zamknieta")
-# Baza została podłączona
-# Baza została zamknieta
