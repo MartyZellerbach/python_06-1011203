@@ -24,3 +24,5 @@ class Dom:
 dom1 = Dom("Radek", 300, "Biały", 17)
 dom1.wyswietl_okna()
 
+# dopisać metody zw stylu zmień... w sposób kontrolowany.
+
