@@ -16,3 +16,5 @@ except Exception as e:  # worek na pozostałe błedy
     print('Błąd:', e)
 
 print('Program nadal działa')
+
+
